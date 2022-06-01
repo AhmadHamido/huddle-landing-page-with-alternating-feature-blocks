@@ -32,6 +32,9 @@ h2,
 
 h1 {
   font-size: 1.8rem;
+  margin-top: 0.5em;
+  grid-column: 1 / -1;
+  grid-row: 2;
 }
 
 footer p {
@@ -46,10 +49,22 @@ a {
   display: inline-block;
 }
 
+.title-paragraph {
+  margin-bottom: 1.8em;
+  font-weight: 400;
+  grid-row: 3;
+  grid-column: 1 / -1;
+}
+
+.image-header {
+  grid-row: 5 / -1;
+  grid-column: 1/ -1;
+}
+
 /* logo */
 .header-logo {
-  width: 27%;
-  max-width: 200px;
+  width: 70%;
+  max-width: 250px;
 }
 
 .footer-logo {
@@ -58,18 +73,31 @@ a {
 
 /* buttons */
 .btn {
-  border-radius: 20px;
-  padding: 0.25em 1.5em;
+  border-radius: 30px;
 }
 
 .section-btn,
 .title-btn {
   background: hsl(322, 100%, 66%);
+  font-size: 0.9rem;
 }
 
 .header-btn {
   background: #fff;
-  font-size: 0.75rem;
+  font-size: 0.85rem;
+  padding: 0.25em 1.75em;
+  box-shadow: 0 0 3px #c5c4c4;
+  grid-column: 2;
+  grid-row: 1;
+  justify-self: end;
+  align-self: start;
+}
+
+.title-btn {
+  padding: 0.75em 4em;
+  margin-bottom: 3.6em;
+  grid-column: 1 / -1;
+  grid-row: 4;
 }
 
 .header-btn,
@@ -123,12 +151,22 @@ main {
   margin-right: auto;
 }
 
+.container-header {
+  padding: 1em 0;
+  display: grid;
+  grid-template: 70px 130px 150px 100px 1fr / 1fr 1fr;
+}
+
 /* ==============
 Media Query
 ============= */
 
 @media (min-width: 600px) {
   .container {
-    max-width: 1200px;
+    max-width: 1100px;
+  }
+
+  .header-btn {
+    font-size: 1rem;
   }
 }
