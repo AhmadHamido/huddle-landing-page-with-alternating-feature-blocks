@@ -310,7 +310,7 @@ Media Query
 
   .section {
     display: grid;
-    grid-template-columns: auto 425px 400px;
+    grid-template-columns: repeat(3, auto);
     grid-gap: 75px;
   }
 
