@@ -54,7 +54,7 @@ a {
 }
 
 .title-paragraph {
-  margin-bottom: 1.8em;
+  font-size: 0.92rem;
   font-weight: 400;
   grid-row: 3;
   grid-column: 1 / -1;
@@ -209,7 +209,7 @@ main {
 .container-header {
   padding: 1em 0;
   display: grid;
-  grid-template: 70px 130px 150px 100px 1fr / 1fr 1fr;
+  grid-template: 70px repeat(2, 120px) 100px 1fr / 1fr 1fr;
 }
 
 .container-main {
@@ -276,12 +276,13 @@ Media Query
 
 @media (min-width: 600px) {
   .container {
-    max-width: 990px;
+    max-width: 980px;
   }
 
   .container-header {
-    grid-template: 70px repeat(2, auto) 100px / 1fr 1.5fr;
-    grid-gap: 20px;
+    grid-template: 70px repeat(2, auto) 100px / 1fr 1.25fr;
+    grid-row-gap: 20px;
+    grid-column-gap: 40px;
   }
 
   h1,
@@ -304,14 +305,10 @@ Media Query
     grid-row: 2 / 5;
   }
 
-  .title-paragraph {
-    margin: 0;
-  }
-
   .section {
     display: grid;
-    grid-template-columns: repeat(3, auto);
-    grid-gap: 75px;
+    grid-template-columns: 0 repeat(auto-fill, minmax(100px, 430px));
+    grid-gap: 50px;
   }
 
   .section-text {
@@ -331,6 +328,9 @@ Media Query
 
   .section-image {
     grid-column: 3;
+    width: 90%;
+    height: 90%;
+    object-fit: cover;
   }
 
   .section-text-opposite {
