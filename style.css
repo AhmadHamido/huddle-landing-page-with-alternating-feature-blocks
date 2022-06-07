@@ -137,7 +137,6 @@ a {
 .section-btn,
 .title-btn {
   background: hsl(322, 100%, 66%);
-  font-size: 0.85rem;
   padding: 0.75em 2em;
   align-self: center;
 }
@@ -276,10 +275,46 @@ Media Query
 
 @media (min-width: 600px) {
   .container {
-    max-width: 1100px;
+    max-width: 990px;
   }
+
+  .container-header {
+    grid-template: 70px repeat(2, auto) 100px / 1fr 1.5fr;
+    grid-gap: 20px;
+  }
+
+  h1,
+  .title-paragraph,
+  .title-btn {
+    grid-column: 1;
+  }
+
+  h1,
+  .title-paragraph {
+    text-align: left;
+  }
+
+  h1 {
+    align-self: end;
+  }
+
+  .image-header {
+    grid-column: 2;
+    grid-row: 2 / 5;
+  }
+
+  .title-paragraph {
+    margin: 0;
+  }
+
+  /* buttons */
 
   .header-btn {
     font-size: 1rem;
+  }
+
+  .title-btn {
+    justify-self: start;
+    padding: 1em 3em;
   }
 }
