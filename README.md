@@ -13,14 +13,12 @@ This is a solution to the [Huddle landing page with alternating feature blocks c
   - [Useful resources](#useful-resources)
 - [Author](#author)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## Overview
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: (https://github.com/AhmadHamido/huddle-landing-page-with-alternating-feature-blocks)
+- Live Site URL: (https://your-live-site-url.com)
 
 ## My process
 
@@ -29,36 +27,18 @@ This is a solution to the [Huddle landing page with alternating feature blocks c
 - Semantic HTML5 markup
 - CSS properties
 - CSS Grid
-- Flexbox
 - Mobile-first workflow
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-
-```js
-const proudOfThisFunc = () => {
-  console.log("🎉");
-};
-```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
+1. Learned to use less code
+2. Learned to use less block elements that contain the content(like "div")
+3. Learned to use the auto-fill and auto-fit with minmax
+4. Got better with sizing rows and columns
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+I still need to work on my ability of putting sizes on the images when they are inside a grid
 
 ### Useful resources
 
@@ -67,6 +47,6 @@ Use this section to outline areas that you want to continue focusing on in futur
 
 ## Author
 
-- Website - [Ahmad Hamido](https://www.your-site.com)
+- Website - [Ahmad Hamido](https://ahmadhamido.github.io/huddle-landing-page-with-alternating-feature-blocks/)
 - Frontend Mentor - [@AhmadHamido](https://www.frontendmentor.io/profile/AhmadHamido)
 - Twitter - [@thereapermma91](https://www.twitter.com/thereapermma91)
